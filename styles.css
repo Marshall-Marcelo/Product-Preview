@@ -65,6 +65,12 @@ body {
   font-weight: var(--heavy);
 }
 
+.desc button:hover {
+  background-color: var(--green700);
+  cursor: pointer;
+  transition: 0.15s;
+}
+
 .desc .tag {
   color: var(--grey);
   letter-spacing: 0.3em;
