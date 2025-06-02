@@ -1,0 +1,129 @@
+:root {
+  --font-size: 14px;
+  --blue: hsl(228, 45%, 44%);
+  --green500: hsl(158, 36%, 37%);
+  --green700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+  --medium: 500;
+  --heavy: 700;
+  --montserrat: Montserrat;
+  --fraunces: Fraunces;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  display: grid;
+  margin: 0;
+  place-items: center;
+  height: 100vh;
+  font-family: var(--montserrat), var(--montserrat);
+  background-color: var(--cream);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80vw;
+  margin: 3%;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+.container picture {
+  padding: 0;
+}
+
+.container picture img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.desc {
+  padding: 5%;
+}
+
+.desc button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green500);
+  border-style: none;
+  padding: 0.8em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  border-radius: 5px;
+  color: var(--white);
+  font-weight: var(--heavy);
+}
+
+.desc .tag {
+  color: var(--grey);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: var(--medium);
+}
+
+.desc .title {
+  font-family: var(--fraunces);
+  font-weight: var(--heavy);
+  font-size: 2.2em;
+}
+
+.desc .product {
+  line-height: 2em;
+  color: var(--grey);
+  font-weight: var(--medium);
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+}
+
+.price .sale {
+  width: 50%;
+  font-family: var(--fraunces);
+  color: var(--green500);
+  font-weight: var(--heavy);
+  font-size: 2.5em;
+}
+
+.price .orig {
+  align-self: center;
+  font-family: var(--fraunces);
+  color: var(--grey);
+  text-decoration-line: line-through;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue);
+}
+
+@media (min-width: 28em) {
+  .container {
+    width: 100%;
+    max-width: 40vw;
+    flex-direction: row;
+  }
+
+  .container picture img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+}
