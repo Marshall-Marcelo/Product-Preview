@@ -63,12 +63,12 @@ body {
   border-radius: 5px;
   color: var(--white);
   font-weight: var(--heavy);
+  transition: background-color 0.15s ease-in-out;
 }
 
 .desc button:hover {
   background-color: var(--green700);
   cursor: pointer;
-  transition: 0.15s;
 }
 
 .desc .tag {
